@@ -24,8 +24,8 @@ void startDrawing () {
       
       // Loads the flags if they are not loaded.
       if (index < flags.length && flags[index] == null)  {
-        String filename = groups[i][j] + ".png";
-        flags[index] = loadImage(groups[i][j] + ".png");
+        String filename = "Flags/" +groups[i][j] + ".png";
+        flags[index] = loadImage("Flags/" +groups[i][j] + ".png");
         println("Loading image: " + filename + " -> " + (flags[index] != null ? "Success" : "Failed"));
         index++;
       }
